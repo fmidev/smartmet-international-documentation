@@ -14,4 +14,4 @@ Documentation for SmartMet systems that are deployed internationally.
 
 # INSTALL
 ## Smartmet Workstation
-* [Install Guide](/SmartMet%20Workstation.md)
+* [Install Guide](/Install/SmartMet%20Workstation.md)
