@@ -1,4 +1,4 @@
-# SmartMet International Documenation
+# SmartMet International Documentation
 Documentation for SmartMet systems that are deployed internationally.
 
 ## SmartMet Data Production Server
