@@ -13,5 +13,5 @@ Documentation for SmartMet systems that are deployed internationally.
 * Install Guide https://docs.rke2.io/install/ha
 
 # INSTALL
-## Smartmet Workstation
-* [Install Guide](/Install/SmartMet%20Workstation.md)
+* Smartmet Workstation [Install Guide](/Install/SmartMet%20Workstation.md)
+* Smartmet Alert [Install Guide](/Install/SmartMet%20Alert.md)
