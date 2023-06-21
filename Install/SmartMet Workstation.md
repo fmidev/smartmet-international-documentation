@@ -9,4 +9,7 @@
 7. Run ``tm752_x64.msi`` (deselect fortran and gsharp, let the configuration run with default settings, don't mind about error in the end)
 8. Copy license file (if you have one) to c:/uniras/7v5/base folder and check)
 9. Copy shortcut startup shortcut to desktop or to start menu
-10. Map network drive to S: from your smartmet share 
+10. Map network drive to S: from your smartmet share
+
+## Release Notes
+* https://github.com/fmidev/smartmet-workstation/releases
