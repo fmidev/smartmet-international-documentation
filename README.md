@@ -22,6 +22,9 @@ Documentation for SmartMet systems that are deployed internationally.
 * Use /smartmet/cnf/triggers.d to run scripts when some file or directory updates
 * Trigger file name is the path to triggering directory, in file name replace / with :
 
+### CLI tools
+* https://github.com/fmidev/smartmet-qdtools
+
 ### NOTES
 * Do not modify system provided files, they may be overwritten with package updates
 
