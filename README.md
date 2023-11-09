@@ -1,12 +1,14 @@
 # SmartMet International Documentation
 Documentation for SmartMet systems that are deployed internationally.
 
-## SmartMet Data Production Server
+## SmartMet Data Processing Server
 * Rocky Linux 8 minimal
 * Install Guide https://github.com/fmidev/smartmet-install
 
 ### Data
 * Add GFS https://github.com/fmidev/smartmet-data-gfs
+* Add GFS https://github.com/fmidev/smartmet-data-gem
+* Add SYNOP  https://github.com/fmidev/smartmet-data-gts-synop
 
 ## Kubernetes Cluster
 * RKE2 3 node cluster
