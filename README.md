@@ -7,10 +7,13 @@ Documentation for SmartMet systems that are deployed internationally.
 
 ### Data
 * Add GFS https://github.com/fmidev/smartmet-data-gfs
+  * dnf install smartmet-data-gfs
 * Add GFS https://github.com/fmidev/smartmet-data-gem
+  * dnf install smartmet-data-gem
 * Add SYNOP  https://github.com/fmidev/smartmet-data-gts-synop
 * Add SOUNDING  https://github.com/fmidev/smartmet-data-gts-sounding
-  
+* Add METAR  https://github.com/fmidev/smartmet-data-gts-metar
+* If local GTS files are not available use packages 
 
 ### Cron
 * Use /smartmet/cnf/cron/cron.d to run scheduled scripts. Do not use smartmet users crontab.
