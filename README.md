@@ -9,6 +9,18 @@ Documentation for SmartMet systems that are deployed internationally.
 * Add GFS https://github.com/fmidev/smartmet-data-gfs
 * Add GFS https://github.com/fmidev/smartmet-data-gem
 * Add SYNOP  https://github.com/fmidev/smartmet-data-gts-synop
+* Add SOUNDING  https://github.com/fmidev/smartmet-data-gts-sounding
+  
+
+### Cron
+* Use /smartmet/cnf/cron/cron.d to run scheduled scripts. Do not use smartmet users crontab.
+
+### Triggers
+* Use /smartmet/cnf/triggers.d to run scripts when some file or directory updates
+* Trigger file name is the path to triggering directory, in file name replace / with :
+
+### NOTES
+* Do not modify system provided files, they may be overwritten with package updates
 
 ## Kubernetes Cluster
 * RKE2 3 node cluster
