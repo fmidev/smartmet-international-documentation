@@ -4,10 +4,10 @@ SmartMet Alert client is usually installed to one of the SmartMet Workstations. 
 install it to other computers as well.  
 
 1. Download and install proper Java-version.  Recommended version is Bellsoft Liberica 
-(based on openJDK) LTS version 8. It can be found from: https://bell-sw.com 
+(based on openJDK) LTS version 8. It can be found from: https://bell-sw.com/pages/downloads/#jdk-8-lts
 
-2. Make sure that you download FULL JDK, instead of proposed Standard JDK-package. 
-Please also note that version is 8. (e.g. https://download.bell-sw.com/java/8u292+10/bellsoft-jdk8u292+10-windows-amd64-full.msi) 
+2. Make sure that you download FULL JRE, instead of proposed Standard JDK-package. 
+Please also note that version is 8. (e.g. https://download.bell-sw.com/java/8u422+6/bellsoft-jre8u422+6-windows-amd64-full.msi) 
 
 3. Download the newest software package from the address provided by FMI. (e.g. 
 https://cdn.fmi.fi/b/smartmet-alert-kyrgyzstan-2021-05-27.zip) 
