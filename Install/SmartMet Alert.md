@@ -10,7 +10,7 @@ install it to other computers as well.
 Please also note that version is 8. (e.g. https://download.bell-sw.com/java/8u422+6/bellsoft-jre8u422+6-windows-amd64-full.msi) 
 
 3. Download the newest software package from the address provided by FMI. (e.g. 
-https://cdn.fmi.fi/b/smartmet-alert-kyrgyzstan-2021-05-27.zip) 
+https://cdn.fmi.fi/b/smartmet-alert-yourcountry-yyyy-mm-dd.zip) 
 
 4. Check that the SmartMet server is connected and mapped as an drive S: in the computer 
 where you want to do the installation.  
