@@ -19,26 +19,33 @@ where you want to do the installation.
 your computer. 
 
 6. Change the destination folder of the SmartMet Alert CAP messages to create the files 
-into s://smartalert (or other wanted destination): 
- 1. Go to folder c://smartmer/smartmet-alert-
+into s://smartalert (or other wanted destination):
+
+7. Go to folder c://smartmet/smartmet-alert-
 country/conf  
- 2. Open the file with notepad etc:application-configuration.xml 
- 3. Find the following configuration snippet (ca from rows 6-8)
+8. Open the file with notepad application-configuration.xml 
+9. Find the following configuration snippet (ca from rows 6-8)
+```xml
     <bean id="repositoryOutputFolder" class="java.lang.String"> 
     <constructor-arg value="#{systemProperties['user.home']}/SmartMet-Alert-Country" /> 
-</bean> 
+    </bean>
+```
+
+10. Change the value attribute followingly (please note that the destination path may vary depending on the country. Default is S:\smartalert).
+```xml
+     <bean id="repositoryOutputFolder" class="java.lang.String"> 
+     <constructor-arg value="S:\smartalert" /> 
+     </bean>
+```
  
-6. Change the value attribute followingly (please note that the destination path may 
-vary depending on the country. Default is S:\smartalert).  7.  <bean id="repositoryOutputFolder" class="java.lang.String"> 
-8.      <constructor-arg value="S:\smartalert" /> 
-</bean> 
- 
-9. In case test environment is set up and the produced CAP files are wanted to be 
+11. In case test environment is set up and the produced CAP files are wanted to be 
 produced there change the value attribute to point into the test folder. For 
 example: S:\smartalert_test 
 
-7. Start the program double clicking smartmet-alert-country.jar -file in the folder.  
-1. If program does not start, check the used Java version. Program can be launched 
+12. Start the program double clicking smartmet-alert-country.jar -file in the folder.  
+
+If program does not start, check the used Java version. Program can be launched 
 also from command line with command "java -jar smartmet-alert-country.jar"  
-2. Known bug and Workaround: If map does not show up when starting the 
+
+Known bug and Workaround: If map does not show up when starting the 
 
