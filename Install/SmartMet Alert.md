@@ -44,8 +44,8 @@ example: S:\smartalert_test
 
 12. Start the program double clicking smartmet-alert-country.jar -file in the folder.  
 
-⚠️ If program does not start, check the used Java version. Program can be launched 
-also from command line with command "java -jar smartmet-alert-country.jar"  
+⚠️ If the program does not start, check the Java version. Program can be launched 
+also from command line with command "java -jar smartmet-alert-country.jar". This needs to be run from smartmet-alert-country folder.  
 
 ⚠️ Known bug and Workaround: If map does not show up when starting the 
 program, resize SmartMet Alert window
