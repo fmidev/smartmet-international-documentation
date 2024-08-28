@@ -1,10 +1,10 @@
 1. Select from the settings of the workstation "keep real aspect ratio" off and maximise the workstation window. 
 2. Zoom into the desired area and press CTRL+m and paste into notepad. (Projection string is the first line followed by map server addresses.) 
 3. Repeat this into three different areas that will be configured as 1,2 and 3 "predefined areas" (country, small and large) in the SmartMet Workstation. 
-4. Use the addresses below and paste the projection string after the address and open in browser. Preferably for Natural Earth maps 60px/deg lines and for blue marble 240px/deg lines. *Note that high resolution maps may not work in case the area is too large (map server returns just a blank file. In this case select lower resolution string.). It is recommended to avoid any maps exceeding WIDTH or HEIGHT=5000. 
-5. Fetch each map for three different areas and save each map in C:\smartmet\dropbox\ COUNTRY\SmartMet\control\maps\local with the corresponding names. 
-6. The CTRL+m gives you also the coordinates of the area zoomed. Paste the lat-lon coordinate string in C:\smartmet\dropbox\COUNTRY\SmartMet\control\maps\local into configuration files project_and_coordinates_large, small and medium.
-*Paste for example this into the following URL's: &SRS=EPSG:4326&BBOX=49.2401,28.0355,92.0532,50.3377&WIDTH=2569&HEIGHT=1338
+4. Use the addresses below and paste the projection string after the address and open in browser. (Paste for example this into the  map URL's below: &SRS=EPSG:4326&BBOX=49.2401,28.0355,92.0532,50.3377&WIDTH=2569&HEIGHT=1338. Preferably for Natural Earth maps 60px/deg lines and for blue marble 240px/deg lines. Note that high resolution maps may not work in case the area is too large map server returns just a blank file. In this case select lower resolution string. It is recommended to avoid any maps exceeding WIDTH or HEIGHT=5000.) 
+5. Fetch each map for each three different areas and save each map in C:\smartmet\dropbox\ COUNTRY\SmartMet\control\maps\local with the corresponding names (for example local_bluemarble_large.png) 
+6. The CTRL+m gives you also the coordinates of the area zoomed. Paste the lat-lon coordinate string for each area in C:\smartmet\dropbox\COUNTRY\SmartMet\control\maps\local into configuration files: project_and_coordinates_large, ...small and ...medium.
+   
 
 **Bluemarble**
 
