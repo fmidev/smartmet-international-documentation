@@ -1,3 +1,5 @@
+# Create SmartMet Workstation Base Maps
+
 1. Select from the settings of the workstation "keep real aspect ratio" off and maximize the workstation window. 
 2. Zoom into the desired area and press CTRL+m and paste into notepad. (Projection string is the first line followed by map server addresses.) 
 3. Repeat this into three different areas that will be configured as 1,2 and 3 "predefined areas" (country, small and large) in the SmartMet Workstation. 
