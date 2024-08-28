@@ -7,7 +7,7 @@ install it to other computers as well.
 (based on openJDK) LTS version 8. It can be found from: https://bell-sw.com/pages/downloads/#jdk-8-lts
 
 2. Make sure that you download FULL JRE, instead of proposed Standard JDK-package. 
-Please also note that version is 8. (e.g. https://download.bell-sw.com/java/8u422+6/bellsoft-jre8u422+6-windows-amd64-full.msi) 
+Please also note that version is 8. Do NOT download standard version which is the default link.
 
 3. Download the newest software package from the address provided by FMI. (e.g. 
 https://cdn.fmi.fi/b/smartmet-alert-yourcountry-yyyy-mm-dd.zip) 
@@ -15,12 +15,12 @@ https://cdn.fmi.fi/b/smartmet-alert-yourcountry-yyyy-mm-dd.zip)
 4. Check that the SmartMet server is connected and mapped as an drive S: in the computer 
 where you want to do the installation.  
 
-5. Unzip the downloaded SmartMet Alert installation package to the desired destination in 
+5. Unzip the downloaded SmartMet Alert installation package to c://smartmet folder in 
 your computer. 
 
 6. Change the destination folder of the SmartMet Alert CAP messages to create the files 
-into SmartMet server (or other wanted destination): 
- 1. From the installed SmartMet Alert package find the folder:smartmet-alert-
+into s://smartalert (or other wanted destination): 
+ 1. Go to folder c://smartmer/smartmet-alert-
 country/conf  
  2. Open the file with notepad etc:application-configuration.xml 
  3. Find the following configuration snippet (ca from rows 6-8)
