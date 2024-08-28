@@ -9,7 +9,8 @@
 7. Run ``bin_x64\tm752_x64.msi`` (deselect fortran and gsharp, let the configuration run with default settings, don't mind about error in the end)
 8. Copy license file (if you have one) to c:/uniras/7v5/base folder and check)
 9. Copy smartmet startup shortcut from c:\SmartMet\Dropbox\COUNTRY\SmartMet to desktop or to start menu
-10. Map network drive to S: from your smartmet share
+10. Open shortcut properties (right click, select properties). Modify the paths in lines "target" and "start in" of the shortcut to match with the smartmet installation path.
+11. Map network drive to S: from your smartmet share
 
 ## Release Notes
 * https://github.com/fmidev/smartmet-workstation/releases
