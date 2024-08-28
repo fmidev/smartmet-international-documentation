@@ -6,18 +6,24 @@
 6. The CTRL+m gives you also the coordinates of the area zoomed. Paste the lat-lon coordinate string in C:\smartmet\dropbox\COUNTRY\SmartMet\control\maps\local into configuration files project_and_coordinates_large, small and medium.
 *Paste for example this into the following URL's: &SRS=EPSG:4326&BBOX=49.2401,28.0355,92.0532,50.3377&WIDTH=2569&HEIGHT=1338
 
-*Bluemarble*
+**Bluemarble**
+
 https://wms.meteo.fi/geoserver/wms?SERVICE=WMS&LAYERS=MeteoFI%3Abluemarble&STYLES=&FORMAT=image%2Fpng8&VERSION=1.1.1&REQUEST=GetMap
 
-*Natural Earth*
+**Natural Earth**
+
 http://wms.fmi.fi/fmi-apikey/1806eb12-419c-4b79-8d6c-75aed490276e/geoserver/wms?SERVICE=WMS&LAYERS=naturalearth%3Anaturalearthcolor&STYLES=&FORMAT=image%2Fpng8&VERSION=1.1.1&REQUEST=GetMap
 
-*Natural Earth Gray*
+**Natural Earth Gray**
+
 http://wms.fmi.fi/fmi-apikey/1806eb12-419c-4b79-8d6c-75aed490276e/geoserver/wms?SERVICE=WMS&LAYERS=naturalearth%3Anaturalearthgray&STYLES=&FORMAT=image%2Fpng8&VERSION=1.1.1&REQUEST=GetMap
 
-*Open street maps*
+**Open street maps**
+
 https://wms.fmi.fi/fmi-apikey/1806eb12-419c-4b79-8d6c-75aed490276e/geoserver/wms?SERVICE=WMS&LAYERS=osm:osm&STYLES=&FORMAT=image%2Fpng8&VERSION=1.1.1&REQUEST=GetMap
 
-*KAP -Maps (Only in wider European area)*
+**KAP -Maps (Only in wider European area)**
+
 7 different available, modify "version%201" with numbers 201-207
+
 http://wms.fmi.fi/fmi-apikey/1806eb12-419c-4b79-8d6c-75aed490276e/geoserver/wms?SERVICE=WMS&layers=KAP%3ABasicMap%20version%201&STYLES=&FORMAT=image%2Fpng8&VERSION=1.1.1&REQUEST=GetMap
