@@ -39,7 +39,7 @@ Documentation for SmartMet systems that are deployed internationally.
 
 * RKE2 3 node cluster
 * Install Guide https://docs.rke2.io/install/ha
-
+* Docker disk space debugging https://github.com/fmidev/smartmet-international-documentation/blob/main/docker_disk_space_debug.md
 ## Instal Guides for SmartMet Workstation software
 
 * Smartmet Workstation [Install Guide](/Install/SmartMet%20Workstation.md)
