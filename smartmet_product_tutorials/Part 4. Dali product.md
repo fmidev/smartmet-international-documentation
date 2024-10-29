@@ -345,7 +345,7 @@ Next, we will add a marker symbol to represent the city of Helsinki on the map.
 
 ```json
 
-`{
+{
   "qid": "city_marker_1",
   "layer_type": "symbol",
   "positions": {
@@ -475,7 +475,7 @@ To enhance the map's context, we can add country borders by referencing a pre-de
 
 ```json
 
-"ref:refs.Europe_boundaries"` 
+"ref:refs.Europe_boundaries" 
 ```
 #### Explanation:
 
