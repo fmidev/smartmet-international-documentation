@@ -7,7 +7,7 @@ install it to other computers as well.
 (based on openJDK) LTS version 8. It can be found from: https://bell-sw.com/pages/downloads/#jdk-8-lts
 
 2. Make sure that you download FULL JRE, instead of proposed Standard JDK-package. 
-Please also note that version is 8. Do NOT download standard version which is the default link.
+Please also note that version is 8. Do NOT download standard version which is the default link. Make sure that computer does not have any other versions installed previously. (neither JRE nor JDK should be installed previously)
 
 3. Download the newest software package from the address provided by FMI. (e.g. 
 https://cdn.fmi.fi/b/smartmet-alert-yourcountry-yyyy-mm-dd.zip) 
