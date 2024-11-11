@@ -31,3 +31,14 @@ This example weathermap will serve as a display for the WMS product we’ll crea
 5. Open the index.html to a browser window.
 
 Now you should now have a functional weathermap HTML page that can display WMS-layers.
+
+**Note**: Existing example layers are FMI-specific and might not be available on your setup. 
+
+To identify the available layers from the Smartmet Server, perform a GetCapabilities request by navigating to the following URL in your browser:
+
+
+```js
+    https://[SMARTMET_SERVER]/wms?request=GetCapabilities&service=WMS
+```
+
+In the response, locate the <Layer> blocks to find layers such as *nhms:model:temperature* or *nhms:gfs:temperature*. Once identified, update map-config.js with the necessary layer configurations.

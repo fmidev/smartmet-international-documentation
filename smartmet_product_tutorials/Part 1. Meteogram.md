@@ -8,7 +8,7 @@ A meteogram is a graphical representation that provides a detailed view of weath
 ## Step 1: Download the SmartMet Demo Products
 
 1. Go to the [SmartMet Demo Products GitHub page](https://github.com/fmidev/smartmet-demo-products).
-2. Click on the **Code** button and select **Download ZIP** to download the repository.
+2. Click on the **Code** button and select **Download ZIP** to download the repository. (Can also use git clone)
 3. Extract the ZIP file to your desired folder. This will give you access to all the demo product files.
 
 ---
@@ -34,7 +34,7 @@ Now that the meteogram is running, you need to modify the configuration to conne
 3. Find the **serviceURL** parameter and update it with the URL of the data service you want to use. For example:
    
    ```js
-   serviceURL: 'https://opendata.fmi.fi/wfs',
+   serviceURL: 'https://opendata.fmi.fi/timeseries?',
    ```
 
 4. Next, locate the **producer** parameter and update it. The producer is responsible for generating weather data, such as GFS (Global Forecast System). Example:
