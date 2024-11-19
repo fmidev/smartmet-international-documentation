@@ -345,7 +345,7 @@ Next, we will add a marker symbol to represent the city of Helsinki on the map.
 
 ```json
 
-`{
+{
   "qid": "city_marker_1",
   "layer_type": "symbol",
   "positions": {
