@@ -4,7 +4,7 @@ Documentation for SmartMet systems that are deployed internationally.
 
 ## SmartMet Data Processing Server
 
-* Rocky Linux 8 minimal
+* Rocky Linux 8 / 9 minimal
 * Install Guide https://github.com/fmidev/smartmet-install
 
 ### Data
