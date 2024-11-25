@@ -11,7 +11,7 @@ Documentation for SmartMet systems that are deployed internationally.
 
 * Add GFS https://github.com/fmidev/smartmet-data-gfs
   * dnf install smartmet-data-gfs
-* Add GFS https://github.com/fmidev/smartmet-data-gem
+* Add GEM https://github.com/fmidev/smartmet-data-gem
   * dnf install smartmet-data-gem
 * Add SYNOP  https://github.com/fmidev/smartmet-data-gts-synop
 * Add SOUNDING  https://github.com/fmidev/smartmet-data-gts-sounding
