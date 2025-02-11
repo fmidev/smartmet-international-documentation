@@ -77,3 +77,9 @@ microk8s helm install \
 helm repo add fmi https://fmidev.github.io/helm-charts --force-update
 ```
 
+## UPGRADE
+
+Upgrade RKE2 
+```
+curl -sfL https://get.rke2.io | sh -
+```
