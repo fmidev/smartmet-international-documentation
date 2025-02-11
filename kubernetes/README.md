@@ -72,4 +72,8 @@ microk8s helm install \
   --set crds.enabled=true
 ```
 
+### Install FMI helm repository 
+```
+helm repo add fmi https://fmidev.github.io/helm-charts --force-update
+```
 
