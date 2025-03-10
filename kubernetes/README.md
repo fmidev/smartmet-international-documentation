@@ -64,7 +64,7 @@ helm repo add jetstack https://charts.jetstack.io --force-update
 
 Adjust version to the latest available.
 ```
-microk8s helm install \
+helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
   --create-namespace \
