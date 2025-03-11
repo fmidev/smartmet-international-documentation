@@ -99,6 +99,7 @@ helm upgrade --install \
   --set ingress.hosts\[0\].paths\[0\].path="/" \
   --set ingress.tls\[0\].hosts\[0\]=portainer.some.domain \
   --set ingress.tls\[0\].secretName=portainer-ingress-tls
+```
 
 ## UPGRADE
 
