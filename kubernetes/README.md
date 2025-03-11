@@ -85,7 +85,7 @@ helm repo add portainer https://portainer.github.io/k8s/ --force-update
 
 ```
 helm upgrade --install \
-  portainer portainer/portainer
+  portainer portainer/portainer \
   --namespace portainer \
   --create-namespace \
   --set service.type=ClusterIP \
