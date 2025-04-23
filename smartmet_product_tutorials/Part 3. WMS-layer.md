@@ -90,7 +90,7 @@ This folder contains specific configurations and styles for the isoband layers u
    ```json
        {
          "title": "Temperature",
-         "abstract": "Temperature 2m from default model producer"
+         "abstract": "Temperature 2m from default model producer",
          "projection": {}
        }
    ```
@@ -104,6 +104,7 @@ This folder contains specific configurations and styles for the isoband layers u
           "title" : "Temperature",
           "abstract" : "Temperature 2m from default model producer",
           "projection": {},
+          "producer": "gfs",
           "views": [{
             "layers": [{
               "qid": "l",
@@ -669,6 +670,7 @@ Repeat step 5 to make sure everything works.
   "title" : "Temperature",
   "abstract" : "Temperature 2m from default model producer",
   "projection": {},
+  "producer": "gfs",
   "views": [{
     "layers": [{
       "qid": "l",

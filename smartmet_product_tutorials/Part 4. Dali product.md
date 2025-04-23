@@ -473,8 +473,38 @@ This step will add a small dot representing Helsinki on the map.
 
 To enhance the map's context, we can add country borders by referencing a pre-defined boundary dataset.
 
-```json
+To enable drawing country borders in Dali products, the following requirements must be met:
 
+1. **Geospatial Data Installation**  
+   The necessary geospatial datasets must be installed on the system.
+
+2. **SmartMet Server Configuration**  
+   The SmartMet Server must be configured correctly to support the use of these datasets.
+
+3. **Boundary Data Availability**  
+   The database must contain the boundary data that you intend to use.
+
+### Example Usage
+
+To use country borders in a Dali product, you can define a reference like this in your configuration:
+
+```json
+"Europe_boundaries": {
+  "qid": "europe",
+  "layer_type": "map",
+  "map": {
+    "schema": "esri",
+    "table": "europe_country_wgs84"
+  },
+  "attributes": {
+    "fill": "none",
+    "stroke": "#000",
+    "stroke-width": "0.4pt"
+  }
+}
+```
+This definition is then referenced in your configuration file with the following line:
+```json
 "ref:refs.Europe_boundaries"
 ```
 #### Explanation:
