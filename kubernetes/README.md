@@ -207,5 +207,5 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt
 ```
 ```
-helm upgrade --install geoweb-test fmi/geoweb-frontend --namespace geoweb --create-namespace --values=values.yaml
+helm upgrade --install geoweb fmi/geoweb-frontend --namespace geoweb --create-namespace --values=values.yaml
 ```
