@@ -48,5 +48,5 @@ Documentation for SmartMet systems that are deployed internationally.
 ## SmartAlert CAP (Common Alerting Protocol)
 
 * Visualization demo code [GitHub.com smartalert-web](https://github.com/fmidev/smartalert-web)
-* Quide how to edit Smartmet alert Editor text fields [Guide](/Customer%20editable%20fields.pdf)
+* Quide how customer can edit Smartmet alert Editor text fields [Guide](/Customer%20editable%20fields.pdf). Beta version, comments required before using.
 
