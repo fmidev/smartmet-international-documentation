@@ -49,7 +49,7 @@ helm repo add kube-vip https://kube-vip.github.io/helm-charts --force-update
 ```
 
 ```
-helm install \
+helm upgrade --install \
   kube-vip kube-vip/kube-vip \
   --namespace kube-system \
   --create-namespace \
