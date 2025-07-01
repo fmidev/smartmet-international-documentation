@@ -1,11 +1,17 @@
-# SmartMet International Documentation
+# SmartMet International Deployment Documentation
 
 Documentation for SmartMet systems that are deployed internationally.
 
-## SmartMet Data Processing Server
+## SmartMet API Server
+
+Software that provides various APIs to query and download weather data and images etc.  
 
 * Rocky Linux 9 minimal
 * Install Guide https://github.com/fmidev/smartmet-install
+
+### Default configuration locations
+
+...TBA...
 
 ### Data
 
@@ -40,6 +46,7 @@ Documentation for SmartMet systems that are deployed internationally.
 * RKE2 3 node cluster
 * Install Guide https://docs.rke2.io/install/ha
 * Docker disk space debugging https://github.com/fmidev/smartmet-international-documentation/blob/main/docker_disk_space_debug.md
+
 ## Install Guides for SmartMet Workstation software
 
 * Smartmet Workstation [Install Guide](/Install/SmartMet%20Workstation.md)
