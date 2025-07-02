@@ -49,7 +49,7 @@ helm repo add kube-vip https://kube-vip.github.io/helm-charts --force-update
 ```
 
 ```
-helm install \
+helm upgrade --install \
   kube-vip kube-vip/kube-vip \
   --namespace kube-system \
   --create-namespace \
@@ -207,5 +207,5 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt
 ```
 ```
-helm upgrade --install geoweb-test fmi/geoweb-frontend --namespace geoweb --create-namespace --values=values.yaml
+helm upgrade --install geoweb fmi/geoweb-frontend --namespace geoweb --create-namespace --values=values.yaml
 ```

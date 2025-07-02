@@ -1,11 +1,17 @@
-# SmartMet International Documentation
+# SmartMet International Deployment Documentation
 
 Documentation for SmartMet systems that are deployed internationally.
 
-## SmartMet Data Processing Server
+## SmartMet API Server
 
-* Rocky Linux 8 / 9 minimal
+Software that provides various APIs to query and download weather data and images etc.  
+
+* Rocky Linux 9 minimal
 * Install Guide https://github.com/fmidev/smartmet-install
+
+### Default configuration locations
+
+...TBA...
 
 ### Data
 
@@ -40,11 +46,15 @@ Documentation for SmartMet systems that are deployed internationally.
 * RKE2 3 node cluster
 * Install Guide https://docs.rke2.io/install/ha
 * Docker disk space debugging https://github.com/fmidev/smartmet-international-documentation/blob/main/docker_disk_space_debug.md
-## Instal Guides for SmartMet Workstation software
+
+## Install Guides for SmartMet Workstation software
 
 * Smartmet Workstation [Install Guide](/Install/SmartMet%20Workstation.md)
 * Smartmet Alert [Install Guide](/Install/SmartMet%20Alert.md)
+* SmartMet Analysis [Install Guide](Install/SmartMet%20Analysis.md)
 
 ## SmartAlert CAP (Common Alerting Protocol)
 
 * Visualization demo code [GitHub.com smartalert-web](https://github.com/fmidev/smartalert-web)
+* Quide how customer can edit Smartmet alert Editor text fields [Guide](/Customer%20editable%20fields.pdf). Beta version, comments required before using.
+
