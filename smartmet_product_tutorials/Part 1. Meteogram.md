@@ -37,12 +37,26 @@ Now that the meteogram is running, you need to modify the configuration to conne
    serviceURL: 'https://opendata.fmi.fi/timeseries?',
    ```
 
-4. Next, locate the **producer** parameter and update it. The producer is responsible for generating weather data, such as GFS (Global Forecast System). Example:
+4. Next, locate the **producer** parameter and update it. The producer is responsible for generating weather data, such as GFS (Global Forecast System). 
    
+    For list of all available producers on the server visit: \
+    http://[SmartMet-Server address]/info?what=qengine
+
+    Pick a producer that has all the needed parameters for the product, for example:
+
    ```js
-   producer: 'gfs',
+   producer: 'gfs_surface',
    ```
 
+5. Update the locations in the list to include only places for which the server has data available.
+
+```javascript
+locations: {
+  'Helsinki': '60,25',
+  'Tampere': '61.5,23.8',
+  'Oulu': '65.0,25.5'
+  // add more locations here
+}
 ---
 
 ## Step 4: Verify that the Page Works

@@ -19,7 +19,7 @@ This example weathermap will serve as a display for the WMS product we’ll crea
    ```js
    serviceURL: 'http://[SmartMet-Server address]/wms',
    ```
-4. Next, locate the **layers** list and add a new WMS-layer.
+4. Next, locate the **layers** list and add a new WMS-layer. To find all available layers on the server, visit https://[SMARTMET_SERVER]/wms?REQUEST=GetCapabilities&SERVICE=WMS&VERSION=1.3.0
    ```js
    layers: {
     'ECMWF Total Cloud Cover': 'fmi:ecmwf:totalcloudcover',

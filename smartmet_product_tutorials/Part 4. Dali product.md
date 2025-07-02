@@ -132,6 +132,9 @@ At this stage, you will see a blank map canvas.
 
 In this step, we add the first view, a map that visualizes temperature data. We use isobands to represent temperature ranges. Isobands are essentially contour lines or filled regions that group areas of the same temperature.
 
+For this and all future maps, remember to check the producer. The producer has to be available on the smartmet-server. to find out all existing producers and their parameters visit: <br> http://[SmartMet-Server address]/info?what=qengine
+
+
 ```json
 
 "views": [
