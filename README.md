@@ -58,3 +58,8 @@ Software that provides various APIs to query and download weather data and image
 * Visualization demo code [GitHub.com smartalert-web](https://github.com/fmidev/smartalert-web)
 * Quide how customer can edit Smartmet alert Editor text fields [Guide](/Customer%20editable%20fields.pdf). Beta version, comments required before using.
 
+
+## Source Codes
+* SmartMet Workstation https://github.com/fmidev/smartmet-workstation
+* SmartMet Server https://github.com/fmidev/smartmet-server
+
