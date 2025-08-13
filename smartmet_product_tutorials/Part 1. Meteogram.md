@@ -57,6 +57,8 @@ locations: {
   'Oulu': '65.0,25.5'
   // add more locations here
 }
+```
+
 ---
 
 ## Step 4: Verify that the Page Works
