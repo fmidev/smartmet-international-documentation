@@ -36,7 +36,7 @@ env:
   vip_arp: "true"  # mandatory for L2 mode
   lb_enable: "true"
   lb_port: "16443" # changed as microk8s uses 16443 instead of 6443
-  vip_cidr: "24"
+  vip_subnet: "24"
   cp_enable: "true" # enable control plane load balancing
   svc_enable: "true" # enable user plane load balancing
   vip_leaderelection: "true" # mandatory for L2 mode
