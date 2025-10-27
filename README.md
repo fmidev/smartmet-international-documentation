@@ -6,7 +6,7 @@ Documentation for SmartMet systems that are deployed internationally.
 
 Software that provides various APIs to query and download weather data and images etc.  
 
-* Rocky Linux 9 minimal
+* Rocky Linux 9 (minimal installation variant)
 * Install Guide https://github.com/fmidev/smartmet-install
 
 ### Default configuration locations
@@ -43,8 +43,8 @@ Software that provides various APIs to query and download weather data and image
 
 ## Kubernetes Cluster
 
-* RKE2 3 node cluster
-* Install Guide https://docs.rke2.io/install/ha
+* RKE2 three node cluster
+* Installation Guide https://docs.rke2.io/install/ha
 * Docker disk space debugging https://github.com/fmidev/smartmet-international-documentation/blob/main/docker_disk_space_debug.md
 
 ## Install Guides for SmartMet Workstation software
