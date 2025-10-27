@@ -7,7 +7,7 @@ Documentation for SmartMet systems that are deployed internationally.
 Software that provides various APIs to query and download weather data and images etc.  
 
 * Rocky Linux 9 (minimal installation variant)
-* Install Guide https://github.com/fmidev/smartmet-install
+* Installation guide https://github.com/fmidev/smartmet-install
 
 ### Default configuration locations
 
