@@ -44,7 +44,7 @@ Software that provides various APIs to query and download weather data and image
 ## Kubernetes Cluster
 
 * RKE2 three node cluster
-* Installation Guide https://docs.rke2.io/install/ha
+* Installation guide https://docs.rke2.io/install/ha
 * Docker disk space debugging https://github.com/fmidev/smartmet-international-documentation/blob/main/docker_disk_space_debug.md
 
 ## Install Guides for SmartMet Workstation software
