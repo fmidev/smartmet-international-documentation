@@ -35,9 +35,9 @@
 		* Register (public) alias: data.*localsuffix* -> Public IP address defined in third DNS bullet
 		* Register (public) alias: alert.*localsuffix* -> Public IP address defined in third DNS bullet
 
-Note: 
+Note: <br>
 [countrycode] should be two letter digit <br>
-[*localsuffix*] should be the domain name that is actually used at the destination site
+[*localsuffix*] should be the domain name that is actually used at the destination site<br>
 
 For example processing server hostname should be something like this:
 ```
