@@ -31,7 +31,7 @@
 	* Register (private) new IP address on "cluster management subnet" -> hostname: [countrycode]-node-3.[localsuffix]
 	* Register (private) new IP address on "cluster management subnet" -> hostname: [countrycode]-smartmet-analysis.[localsuffix]
 	* Register (private) new IP address on "cluster management subnet" -> hostname: [countrycode]-smartmet-processing.[localsuffix]
-	* Register (private) alias: traefik.[localsuffix] -> [countrycode]-smartmet-processing.[localsuffix]
+	* Register (private) alias: traefik.[localsuffix] -> kubernetes.[localsuffix]
 	* Register (private) alias: portainer.[localsuffix] -> kubernetes.[localsuffix]
 	* Register (private) alias: geoweb.[localsuffix] -> kubernetes.[localsuffix]
 	* Register (public) wildcard alias: *.apps.[localsuffix] -> Public IP address defined in third bullet
