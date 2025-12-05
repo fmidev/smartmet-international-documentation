@@ -66,7 +66,7 @@ fi-smartmet-processing.fmi.fi
 	* 6 ports on the int "cluster subnet" and
 	* 6 ports on the "CEPH subnet"
 * RJ45 cabling on the receiving side (3 x LACP link, so 6 cables in total)
-	* all ports on the "cluster management subnet"
+	* All ports on the "cluster management subnet"
 
 
 ### Prequisites: Preconfiguration of the hardware:
