@@ -76,4 +76,4 @@ fi-smartmet-processing.fmi.fi
 * Enable BIOS/EFI virtualization options.
 * Disable any Intel E-cores (if applicable).
 * Configure LOM access (iLO, iDRAC, iPMi or similar)
- 		* Use the IP addresses (ke-lom-[1-3].*localsuffix*) made above
+ 		* Use the IP addresses ([countrycode]-lom-[1-3].[localsuffix]) made above
