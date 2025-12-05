@@ -36,7 +36,7 @@
 		* Register (public) alias: alert.*localsuffix* -> Public IP address defined in third DNS bullet
 
 Note: 
-[countrycode] should be two letter digit
+[countrycode] should be two letter digit <br>
 [*localsuffix*] should be the domain name that is actually used at the destination site
 
 For example processing server hostname should be something like this:
