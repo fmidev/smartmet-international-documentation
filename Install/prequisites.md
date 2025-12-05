@@ -72,8 +72,8 @@ fi-smartmet-processing.fmi.fi
 ### Prequisites: Preconfiguration of the hardware:
 
 * Switch all RAID controllers to HBA mode.
-		* For example: https://www.dell.com/support/manuals/fi-fi/poweredge-rc-h730/perc9ugpublication/switching-the-controller-to-hba-mode?guid=guid-1fcc87e1-d534-451a-9947-56f1175886c5&lang=en-us
+	* For example: https://www.dell.com/support/manuals/fi-fi/poweredge-rc-h730/perc9ugpublication/switching-the-controller-to-hba-mode?guid=guid-1fcc87e1-d534-451a-9947-56f1175886c5&lang=en-us
 * Enable BIOS/EFI virtualization options.
 * Disable any Intel E-cores (if applicable).
 * Configure LOM access (iLO, iDRAC, iPMi or similar)
- 		* Use the IP addresses ([countrycode]-lom-[1-3].[localsuffix]) made above
+	* Use the IP addresses ([countrycode]-lom-[1-3].[localsuffix]) made above
