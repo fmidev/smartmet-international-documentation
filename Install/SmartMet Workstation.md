@@ -10,7 +10,8 @@
 9. Copy license file (if you have one) to ``c:/uniras/7v5/base`` folder and check)
 10. Copy smartmet startup shortcut from ``c:\SmartMet\Dropbox\COUNTRY\SmartMet`` to desktop or to start menu
 11. Open shortcut properties (right click, select properties). Modify the paths in lines "target" and "start in" of the shortcut to match with the smartmet installation path.
-    - Target: ``"c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64\SmartMet.exe" -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\\Control\smartmet_scand.conf" -t "SmartMet 5.x.x.x - Scand"``
+    - Target: ``"c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64\SmartMet.exe" -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\Control\smartmet_scand.conf" -t "SmartMet 5.x.x.x - COUNTRY"``
+    - Start in: ``"c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64"``
 13. Map network drive to S: from your smartmet share
 
 ## Release Notes
