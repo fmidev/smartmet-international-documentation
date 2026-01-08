@@ -2,7 +2,7 @@
 
 Documentation for SmartMet systems that are deployed internationally.
 
-## SmartMet API Server
+## SmartMet API / Dataprocessing Server
 
 Software that provides various APIs to query and download weather data and images etc.  
 
