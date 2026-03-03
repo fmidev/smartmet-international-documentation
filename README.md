@@ -58,6 +58,14 @@ Software that provides various APIs to query and download weather data and image
 * Visualization demo code [GitHub.com smartalert-web](https://github.com/fmidev/smartalert-web)
 * Quide how customer can edit Smartmet alert Editor text fields [Guide](/Customer%20editable%20fields.pdf). Beta version, comments required before using.
 
+## Mobile Application
+* Mobile application's source code is a fork from FMI version which will be customized via settings to match target country's needs
+* Custom modifications to mobile app's UI is kept to minimum because it causes unwanted complexity
+* Mobile application requires Smartmet Server (timeseries, wms and autocomplete) for weather data. Warning data can be read from target country's CAP feed (capfeed.php) or MeteoAlarm
+* Mobile application developers require admin access to Apple's App Store and Google's Play Store (account holder -account is created be target country)
+* Mobile application requires yearly updates at minimum
+* Mobile application related general documentation can be found from weatherapp -folder
+* Technical documentation will be delivered to target country's github repository
 
 ## Source Codes
 * SmartMet Workstation https://github.com/fmidev/smartmet-workstation
