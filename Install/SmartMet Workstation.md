@@ -65,13 +65,13 @@ If you do not have a license file, you can still use SmartMet without one for te
 4. In the **Target** field, add the following after the existing path (before the closing quote, add a space and then these arguments):
 
    ```
-   -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\Control\smartmet_COUNTRY.conf" -t "SmartMet 5.x.x.x - COUNTRY"
+   -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\Control\smartmet.conf" -t "SmartMet 5.x.x.x - COUNTRY"
    ```
 
    The full **Target** field should look like this:
 
    ```
-   "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64\SmartMet.exe" -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\Control\smartmet_COUNTRY.conf" -t "SmartMet 5.x.x.x - COUNTRY"
+   "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64\SmartMet.exe" -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\Control\smartmet.conf" -t "SmartMet 5.x.x.x - COUNTRY"
    ```
 
 5. Click **OK** to save the changes.
