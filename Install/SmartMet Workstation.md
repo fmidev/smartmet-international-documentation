@@ -59,31 +59,24 @@ If you do not have a license file, you can still use SmartMet without one for te
 
 ### Step 6: Create a desktop shortcut
 
-1. Open File Explorer and navigate to: `c:\SmartMet\Dropbox\COUNTRY\SmartMet\`
-2. Find the SmartMet shortcut file (it will have the SmartMet icon).
-3. Right-click the shortcut and select **Copy**.
-4. Go to your Desktop, right-click on an empty area, and select **Paste**.
+1. Open File Explorer and navigate to: `c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64\`
+2. Find the file **SmartMet.exe**, right-click it, and select **Create shortcut**. If Windows asks to place the shortcut on the Desktop, click **Yes**.
+3. Right-click the new shortcut on your Desktop and select **Properties**.
+4. In the **Target** field, add the following after the existing path (before the closing quote, add a space and then these arguments):
 
-### Step 7: Configure the shortcut
+   ```
+   -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\Control\smartmet_COUNTRY.conf" -t "SmartMet 5.x.x.x - COUNTRY"
+   ```
 
-The shortcut needs to point to the correct location of your SmartMet installation.
-
-1. On your Desktop, right-click the SmartMet shortcut and select **Properties**.
-2. In the **Target** field, enter the following (replace `COUNTRY` and `X_Y` with your values):
+   The full **Target** field should look like this:
 
    ```
    "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64\SmartMet.exe" -p "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\Control\smartmet_COUNTRY.conf" -t "SmartMet 5.x.x.x - COUNTRY"
    ```
 
-3. In the **Start in** field, enter:
+5. Click **OK** to save the changes.
 
-   ```
-   "c:\SmartMet\Dropbox\COUNTRY\SmartMet\MetEditor_X_Y\bin_x64"
-   ```
-
-4. Click **OK** to save the changes.
-
-### Step 8: Map the network drive
+### Step 7: Map the network drive
 
 SmartMet needs access to a shared network drive for weather data.
 
@@ -112,7 +105,7 @@ SmartMet needs access to a shared network drive for weather data.
 
 **Network drive S: is not accessible**
 - Check that you are connected to your organization's network. If you are working remotely, make sure your VPN is connected.
-- Try disconnecting and re-mapping the drive (see Step 8).
+- Try disconnecting and re-mapping the drive (see Step 7).
 
 ## Release Notes
 
