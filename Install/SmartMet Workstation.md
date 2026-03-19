@@ -20,7 +20,7 @@ Make sure you have the following ready:
 
 1. Open your web browser and go to https://www.dropbox.com/desktop
 2. Download and run the Dropbox installer.
-3. Log in using the username and password provided by your administrator.
+3. Log in using your organization's Dropbox account. Do not create a new personal account — your IT department can provide you with the correct credentials.
 4. During setup, when asked where to place the Dropbox folder, click **Advanced Settings** and set the folder location to: `c:\SmartMet\Dropbox`
 5. Click **OK** to confirm and finish the installation.
 
