@@ -92,7 +92,8 @@ SmartMet needs access to a shared network drive for weather data.
 3. In the **Drive** dropdown, select **S:**.
 4. In the **Folder** field, enter the network path provided by your administrator.
 5. Check the box **Reconnect at sign-in** so the drive connects automatically when you log in.
-6. Click **Finish**.
+6. Check the box **Connect using different credentials**. The network drive requires specific credentials that are different from your Windows login — your administrator will provide them.
+7. Click **Finish**. Windows will ask for a username and password — enter the credentials provided by your administrator.
 
 ## Troubleshooting
 
