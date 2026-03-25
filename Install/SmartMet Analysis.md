@@ -24,8 +24,8 @@ SmartMet Analysis server can be installed on any Linux server. It is not depende
 Create required user for backend
 
 ```
-groupadd -g <gid> mirri
-useradd -u 1002 -g 1002 -c "SmartMet Analysis" -d /home/mirri -m -s /bin/bash mirri
+groupadd mirri
+useradd -u 1002 -g mirri -c "SmartMet Analysis" -d /home/mirri -m -s /bin/bash mirri
 ```
 
 Install Bellsoft Java (example for RPM-based system) by downloading package from [their website](https://bell-sw.com/pages/downloads/#jdk-8-lts)
