@@ -38,7 +38,14 @@ Create necessary directory structures
 ```
 mkdir -p /var/run/spring-boot-applications/
 mkdir -p /var/log/mirri-server/
+mkdir -p /home/mongodb/data
 chown mirri:mirri /var/run/spring-boot-applications/ /var/log/mirri-server/
+```
+
+Unzip the Spring Boot application to /usr/local/lib (obtained from FMI)
+```
+cd /usr/local/lib
+tar xf spring-boot-applications.tar
 ```
 
 Install Podman and some helper apps (docker can be used instead of podman if necessary)
