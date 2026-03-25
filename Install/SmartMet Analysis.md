@@ -38,7 +38,14 @@ Create necessary directory structures
 ```
 mkdir -p /var/run/spring-boot-applications/
 mkdir -p /var/log/mirri-server/
+mkdir -p /home/mongodb/data
 chown mirri:mirri /var/run/spring-boot-applications/ /var/log/mirri-server/
+```
+
+Unzip the Spring Boot application to /usr/local/lib (obtained from FMI)
+```
+cd /usr/local/lib
+tar xf spring-boot-applications.tar
 ```
 
 Install Podman and some helper apps (docker can be used instead of podman if necessary)
@@ -241,7 +248,10 @@ Available products added to the list are defined in `mirwaShare/printSpec/printS
   <entry key="Ukraine 1" value-ref="ukraine-map-1" />
 ...
 ```
-These area values can also be visually obtained/defined in the software itself
+These area values can also be visually obtained/defined in the software itself in two ways
+
+#### Option 1
+
 - start the editor without logging in
 - select some ready-made projection and zoom to the area you want as the base
 - select the ratio of the edges of the area by changing the ratio/size of the edges
@@ -274,6 +284,8 @@ EPSG:3857:35.532603,38.759447,51.444496,45.382017 (CTRL-double click copy of the
 [width=1065,height=598]
 3955471.307320699,4687272.8546602735,5726775.175354935,5681864.134551796 (CTRL-double click copy of information - no use)
 ```
+
+#### Option 2
 
 A second approach is to use the Product Dialogue in the software
 
