@@ -107,6 +107,7 @@ Successfully added user: {
 		"dbAdmin"
 	]
 }
+exit
 ```
 Define local server firewall rules if necessary
 ```
@@ -115,6 +116,21 @@ firewall-cmd --reload
 ```
 
 ## Configuration
+
+Set database password and hostname in `configuration/mirri-meteorological-woml-storage-mongodb-sensitive.yml`. This should reflect your password set in the previous section. Note that YAML format is very picky about whitespaces so be careful.
+
+Configure systemd for the backend service
+```
+cp /usr/local/lib/spring-boot-applications/mirri-meteorological-woml-storage-mongodb-conceptualmodel-production.service /etc/systemd/system
+```
+Reload systemd
+```
+systemctl daemon-reload
+```
+Start the backend service
+```
+systemctl start mirri-meteorological-woml-storage-mongodb-conceptualmodel-production
+```
 
 # Client (forecaster tool)
 
