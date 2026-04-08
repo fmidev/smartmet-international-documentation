@@ -194,10 +194,11 @@ jnlp.spring.sounding.tracks=MEPS,EC
 You can predefine end user products in the software. The product is generated from the following components
 - Backgrounds from WMS layers (basemap, SYNOP, ...)
 - Backgrounds from NWP model data (different parameters visualized in various ways..)
-- Edited components like fronts, symbols, rain areas, text boxes etc.
-- Configurable timestamp/header
+- Edited components like fronts, symbols, rain areas, text boxes etc. (forecaster input)
+- Configurable timestamp/header (forecaster input)
+- Configurable legend (image)
 
-Once a product is predefined it is available from the product menu (disk icon). See more details in the user manual on this.
+Once a product is predefined it is available from the product menu (save/disk icon). See more details in the user manual on this.
 
 ### Product configuration to add new product to product list
 
@@ -248,7 +249,7 @@ Available products added to the list are defined in `mirwaShare/printSpec/printS
   ```
   ### Additional notes on Image projection
 
-  Definition of the area and projection info is done in `mirwaShare/projection/projectionAnalysisUkraine.xml` configuration file.
+  Definition of the area and projection info is done in `mirwaShare/projection/projectionAnalysisUkraine.xml` configuration file. These are accessible in the GUI from the dropdown menu.
 
   Areas defined in `area-map-analysis`bean and frameworks in `area-border-analysis`. Based on the these definitions it is possible to create 
 ```
@@ -264,12 +265,12 @@ Available products added to the list are defined in `mirwaShare/printSpec/printS
   <entry key="Ukraine 1" value-ref="ukraine-map-1" />
 ...
 ```
-These area values can also be visually obtained/defined in the software itself in two ways
+These product and area values can also be visually obtained/defined in the software itself in two ways
 
 #### Option 1
 
 - start the editor without logging in
-- select some ready-made projection and zoom to the area you want as the base
+- select some ready-made area/projection and zoom to the area you want as the base
 - select the ratio of the edges of the area by changing the ratio/size of the edges
 
 To do the above please see some pointers below (also consult user guide for basic operations)
@@ -285,7 +286,7 @@ Zoom/panning basics
 
 Read and recover basic information about the area and periphery
 
-At the bottom left is an area that contains information about the area. Different content can be viewed by clicking the right mouse button (recycles information)
+At the bottom left in the GUI is a section that contains information about the area. Different content can be viewed by clicking the right mouse button (recycles information)
 
 - point information
 ```
@@ -308,7 +309,7 @@ A second approach is to use the Product Dialogue in the software
 - start the editor without logging in
 - select a map template view as the only layer
 - select productization selection button (disc button)
-- select the dialog "Save  (ctrl)-View" by clicking on the shift-ctrl combination
+- click the "Save (ctrl)-View" button while holding shift-ctrl at the same time
 
 Now you get a new dialogue `Check print details - currentScreen`
 - set/replace from there "Dimension value to 800" (set standard width and height to be calculated automatically by projection)
@@ -322,11 +323,11 @@ for example: EPSG:3857:43.5.42.2,440000#290000 (Ukraine)
 
 Fine-tune the area to its final shape by adjusting the center and width/height in meters
 
-Extract the "Area" values and transfer them to the structure required by the file `projectionAnalysis<Country>.xml` (or `printSpecAnalysis<Country>.xml`)
+Extract the "Area" values and transfer them to the structure required by the file `projectionAnalysis<Country>.xml` and/or `printSpecAnalysis<Country>.xml`
 
   ### Additional notes on Image size
   
-  Product size can be defined by entering either page size (pixels) and the other zero, in which case it is automatically calculated. Size can also be given to either page allowing it to distort the projection if the values are not correct (sometimes, however, it is necessary)
+  Product size can be defined by entering either side size (pixels) and the other zero, in which case it is automatically calculated. Size can also be given to either side allowing it to distort the projection if the values are not correct (sometimes, however, it is necessary)
 
   ### Additional notes on Information format
 
