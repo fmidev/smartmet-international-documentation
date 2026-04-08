@@ -45,6 +45,7 @@ Documentation for SmartMet systems that are deployed internationally.
 * Smartmet Workstation [Install Guide](/Install/SmartMet%20Workstation.md)
 * Smartmet Alert [Install Guide](/Install/SmartMet%20Alert.md)
 * SmartMet Analysis [Install Guide](Install/SmartMet%20Analysis.md)
+  * [SmartMet Analysis training presentation](smartmet_analysis.pptx)
 
 ## SmartAlert CAP (Common Alerting Protocol)
 
