@@ -53,6 +53,9 @@ Software that provides various APIs to query and download weather data and image
 * Smartmet Alert [Install Guide](/Install/SmartMet%20Alert.md)
 * SmartMet Analysis [Install Guide](Install/SmartMet%20Analysis.md)
   * [SmartMet Analysis training presentation](Install/smartmet_analysis.pptx)
+* [Sync data to remote workstations with rclone](Install/rclone-dropbox-sync.md)
+  * Meant for Workstations that are not in the same LAN or via VPN connection to tha same LAN as is the dataprocessing-server  
+    
 
 ## SmartAlert CAP (Common Alerting Protocol)
 
