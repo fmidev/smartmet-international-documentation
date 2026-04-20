@@ -145,4 +145,12 @@ Create cron file:
 
 ---
 
-##
+## On the Smartmet-Workstation
+Map the local DropBox directory that is used for data syncing as the S-drive
+
+```
+net use s: \\localhost\c$\Smartmet\Dropbox\{country}\data
+```
+
+--- 
+
