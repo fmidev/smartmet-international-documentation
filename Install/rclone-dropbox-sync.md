@@ -1,12 +1,12 @@
 # rclone Dropbox Setup (Headless Environment)
 
-This guide explains how to install and configure **rclone** to sync data with **Dropbox** from a smarmet dataprocessing server  and automate syncing using cron. Workstation needs to also be configured to moun the local /data/in as S: drive
+This guide explains how to install and configure **rclone** to sync data with **Dropbox** from a smarmet dataprocessing server  and automate syncing using cron. Workstation needs to also be configured to moun the local /data/in as S: drive.
 
-**You will need to have rclone installed on your local machine to get the token from dropbox.
-**
+**You will need to have rclone installed on your local machine to get the token from dropbox.**
+
 ---
 
-## 1. Install rclone
+## 1. Install rclone on the dataprocessing-server and on your local machine(use appropriate install method for your environment)
 
 ```bash
 sudo dnf install rclone
