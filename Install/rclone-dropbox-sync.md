@@ -121,11 +121,6 @@ Manual sync command:
 rclone -v sync /smartmet/editor/in {countrycode}_dropbox:{country}/data/in/
 ```
 
-### Notes
-
-* `sync` mirrors source → destination (deletes extra files in destination)
-* Use `copy` instead if you want to avoid deletions
-
 ---
 
 ## 6. Automate with Cron
