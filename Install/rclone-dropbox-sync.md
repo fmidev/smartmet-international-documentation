@@ -2,8 +2,8 @@
 
 This guide explains how to install and configure **rclone** to sync data with **Dropbox** from a smarmet dataprocessing server  and automate syncing using cron. Workstation needs to also be configured to moun the local /data/in as S: drive
 
-You will need to have rclone installed on your local machine to get the token from dropbox.
-
+**You will need to have rclone installed on your local machine to get the token from dropbox.
+**
 ---
 
 ## 1. Install rclone
