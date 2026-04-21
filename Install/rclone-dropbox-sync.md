@@ -45,7 +45,7 @@ rclone config
 3. Select storage type:
 
    ```
-   14 / Dropbox
+   xx / Dropbox
    ```
 
 4. Leave OAuth credentials empty (default):
