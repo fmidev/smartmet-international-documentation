@@ -11,6 +11,7 @@ Each guide is a single, self-contained page. Follow the guides in the order show
 | Guide | What it does |
 | --- | --- |
 | [Prepare Nodes](prepare-nodes.md) | Install `ipvsadm` and load IPVS kernel modules on every node. Must be done **before** installing Kubernetes. |
+| [Helm Basics](helm-basics.md) | Primer on the Helm package manager — every install guide below uses Helm. Read this first if you are new to Helm. |
 
 > This guide assumes Kubernetes (RKE2) is already installed after the nodes are prepared. See the [official RKE2 installation guide](https://docs.rke2.io/install/ha) for the cluster installation itself.
 
