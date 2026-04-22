@@ -14,7 +14,7 @@ Each guide is a single, self-contained page. Follow the guides in the order show
 | [kubectl Basics](kubectl-basics.md) | Primer on the `kubectl` command-line tool used throughout these guides. Read this first if you are new to Kubernetes. |
 | [Helm Basics](helm-basics.md) | Primer on the Helm package manager — every install guide below uses Helm. Read this first if you are new to Helm. |
 
-> **New to Kubernetes?** This short video is a good overview before diving into the guides: <https://youtu.be/X48VuDVv0do>.
+> **New to Kubernetes?** This 4-hour video course is a thorough introduction — worth watching before diving into the guides: <https://youtu.be/X48VuDVv0do>.
 
 > This guide assumes Kubernetes (RKE2) is already installed after the nodes are prepared. See the [official RKE2 installation guide](https://docs.rke2.io/install/ha) for the cluster installation itself.
 
