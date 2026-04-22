@@ -6,6 +6,10 @@ Documentation: <https://cert-manager.io/docs/installation/helm/>
 
 ---
 
+## Prerequisites
+
+- An NGINX ingress controller is running in the cluster (cert-manager's HTTP01 solver goes through it to prove domain ownership to Let's Encrypt).
+
 ## 1. Install cert-manager
 
 > Check <https://github.com/cert-manager/cert-manager/releases> for the latest version and replace `v1.17.0` below if a newer one is available.
@@ -14,17 +18,11 @@ Documentation: <https://cert-manager.io/docs/installation/helm/>
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 
-helm install cert-manager jetstack/cert-manager \
+helm upgrade --install cert-manager jetstack/cert-manager \
   --namespace cert-manager \
   --create-namespace \
   --version v1.17.0 \
   --set crds.enabled=true
-```
-
-Verify the pods are running:
-
-```bash
-kubectl get pods -n cert-manager
 ```
 
 ## 2. Create a Let's Encrypt ClusterIssuer
@@ -72,3 +70,39 @@ metadata:
 ```
 
 cert-manager will request a certificate from Let's Encrypt and store it in the `Secret` named in `tls.secretName`.
+
+## Verify
+
+Check that cert-manager is running:
+
+```bash
+kubectl get pods -n cert-manager
+```
+
+All three pods (`cert-manager`, `cert-manager-cainjector`, `cert-manager-webhook`) should show `Running`.
+
+Check that the ClusterIssuer is ready:
+
+```bash
+kubectl get clusterissuer letsencrypt
+```
+
+`READY` should show `True`. If it shows `False`, inspect the details to see why:
+
+```bash
+kubectl describe clusterissuer letsencrypt
+```
+
+## Upgrade
+
+> Check <https://github.com/cert-manager/cert-manager/releases> for the latest version and update `--version` below.
+
+```bash
+helm repo update
+helm upgrade --install cert-manager jetstack/cert-manager \
+  --namespace cert-manager \
+  --version v1.17.0 \
+  --set crds.enabled=true
+```
+
+> `helm repo update` is important — without it, Helm uses its cached index and may not see the latest chart version.

@@ -11,9 +11,19 @@ There are two common ways to connect an NFS server to Kubernetes. Pick **one**.
 
 ---
 
+## Prerequisites
+
+- An NFS server is running and reachable from every cluster node.
+- The NFS export is configured to accept read/write access from the cluster nodes' IP range.
+- You know the server address and the exported path.
+
+---
+
 ## Option 1: NFS Subdir External Provisioner
 
 This Helm chart installs a small pod that creates a new subdirectory on your NFS server for every `PersistentVolumeClaim`.
+
+### Install
 
 > [!IMPORTANT]
 > Replace `nfs.server` and `nfs.path` with the address and exported path of **your** NFS server.
@@ -33,13 +43,29 @@ helm upgrade --install nfs-provisioner \
   --set storageClass.defaultClass=true
 ```
 
-Check that the provisioner pod is running:
+### Verify
 
 ```bash
 kubectl get pods -n nfs-provisioner
+kubectl get storageclass
 ```
 
-After this, any `PersistentVolumeClaim` without an explicit `storageClassName` will use NFS automatically.
+The provisioner pod should show `Running` and `nfs-sc` should appear in the StorageClass list marked as `(default)`. After this, any `PersistentVolumeClaim` without an explicit `storageClassName` will use NFS automatically.
+
+### Upgrade
+
+```bash
+helm repo update
+helm upgrade --install nfs-provisioner \
+  nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
+  --namespace nfs-provisioner \
+  --set nfs.server=172.16.3.89 \
+  --set nfs.path=/smartmet/kubernetes_storage \
+  --set storageClass.name=nfs-sc \
+  --set storageClass.defaultClass=true
+```
+
+> `helm repo update` is important — without it, Helm uses its cached index and may not see the latest chart version.
 
 ---
 
@@ -86,3 +112,9 @@ kubectl apply -f sc-nfs.yaml
 kubectl get storageclass
 kubectl logs -l app=csi-nfs-controller -n kube-system
 ```
+
+`nfs-csi` should appear in the StorageClass list and the CSI controller logs should show no errors.
+
+### Upgrade
+
+Follow the [csi-driver-nfs upgrade instructions](https://github.com/kubernetes-csi/csi-driver-nfs/blob/master/docs/install-csi-driver.md). The `StorageClass` itself rarely needs changes; if it does, edit `sc-nfs.yaml` and re-apply it with `kubectl apply -f sc-nfs.yaml`.

@@ -37,3 +37,33 @@ helm upgrade --install kube-vip kube-vip/kube-vip \
 | `env.svc_election` | Allow kube-vip to also serve VIPs for Kubernetes Services. |
 
 All other settings keep their default values.
+
+## Verify
+
+Check that the kube-vip pods are running on the control plane nodes:
+
+```bash
+kubectl get pods -n kube-system -l app.kubernetes.io/name=kube-vip
+```
+
+Every pod should show `Running`. Then confirm the VIP is reachable from another machine on the same network:
+
+```bash
+ping 192.168.1.100
+```
+
+## Upgrade
+
+Refresh the Helm repository and re-run the install command with the same settings:
+
+```bash
+helm repo update
+helm upgrade --install kube-vip kube-vip/kube-vip \
+  --namespace kube-system \
+  --set config.address=192.168.1.100 \
+  --set env.cp_enable=true \
+  --set env.vip_leaderelection=true \
+  --set env.svc_election=true
+```
+
+> `helm repo update` is important — without it, Helm uses its cached index and may not see the latest chart version.
