@@ -31,6 +31,8 @@ kubectl get pods -n cert-manager
 
 A **ClusterIssuer** tells cert-manager where to request certificates from. One issuer is enough for the whole cluster.
 
+> **Before you apply this file, change the `email:` value to a real address you control.** Let's Encrypt uses it to warn you about expiring certificates and to contact you about account issues. A fake or unreachable address can cause the issuer to be rejected.
+
 Create a file called `letsencrypt.yaml`:
 
 ```yaml
