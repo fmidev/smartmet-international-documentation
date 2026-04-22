@@ -8,7 +8,10 @@ Official upgrade guide: <https://docs.rke2.io/upgrade/basic_upgrade>
 
 ## 1. Back up first
 
-Before upgrading, make sure you have a recent backup of the cluster's etcd database. See <https://docs.rke2.io/backup_restore>.
+> [!WARNING]
+> Always take a fresh backup of the cluster's etcd database **before** starting the upgrade. If the upgrade fails, etcd is the only reliable way to restore the cluster state.
+
+See the official backup guide: <https://docs.rke2.io/backup_restore>.
 
 ## 2. Upgrade the control plane nodes
 

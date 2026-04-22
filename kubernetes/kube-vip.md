@@ -12,6 +12,7 @@ kube-vip relies on the IPVS kernel modules for load balancing. Before installing
 
 ## Install
 
+> [!IMPORTANT]
 > Replace `192.168.1.100` with the VIP address you want to use. It must be a **free IP** on the same subnet as your cluster nodes.
 
 ```bash

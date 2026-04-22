@@ -19,7 +19,10 @@ helm repo update
 
 ## 2. Create the values file
 
-Create a file called `values.yaml`. Replace the hostname and adjust the Geoweb version if a newer one is available.
+> [!IMPORTANT]
+> Replace `geoweb.example.com` with your real hostname (it appears three times). Check <https://github.com/fmidev/helm-charts> for the latest `frontend` version and adjust it if a newer one is available.
+
+Create a file called `values.yaml`:
 
 ```yaml
 versions:

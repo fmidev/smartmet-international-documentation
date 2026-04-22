@@ -15,6 +15,7 @@ There are two common ways to connect an NFS server to Kubernetes. Pick **one**.
 
 This Helm chart installs a small pod that creates a new subdirectory on your NFS server for every `PersistentVolumeClaim`.
 
+> [!IMPORTANT]
 > Replace `nfs.server` and `nfs.path` with the address and exported path of **your** NFS server.
 
 ```bash
@@ -52,7 +53,10 @@ Follow the official installation guide: <https://github.com/kubernetes-csi/csi-d
 
 ### 2. Create a StorageClass
 
-Create a file `sc-nfs.yaml`. Adjust `server` and `share` to match your NFS server.
+> [!IMPORTANT]
+> Adjust `server` and `share` in the file below to match your NFS server.
+
+Create a file `sc-nfs.yaml`:
 
 ```yaml
 apiVersion: storage.k8s.io/v1

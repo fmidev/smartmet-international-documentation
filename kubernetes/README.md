@@ -48,7 +48,15 @@ Install these in order. They are the foundation that other applications rely on.
 
 - Commands in grey boxes are meant to be copied and run in a terminal on a machine that has `kubectl` and `helm` configured for the cluster.
 - Text like `example.com`, `192.168.1.100`, or `your-email@example.com` is a **placeholder** — replace it with your own value before running the command.
-- Blockquotes (lines starting with `>`) highlight important notes and warnings.
+- Coloured callouts highlight things that need attention:
+
+  > [!IMPORTANT]
+  > Values you **must change** before running the command (hostnames, IP addresses, email addresses, paths).
+
+  > [!WARNING]
+  > Steps where a mistake can cause real problems (time-sensitive actions, wrong order, risk of data loss).
+
+  Plain blockquotes (without a `[!TYPE]` marker) are used for tips and extra information that is helpful but not critical.
 
 ## External references
 
