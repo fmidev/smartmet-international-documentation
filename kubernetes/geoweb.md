@@ -141,7 +141,7 @@ Geoweb supports OAuth 2.0 with PKCE. The example below uses [Auth0](https://auth
 **Step 2 — Add the auth settings to `geoweb-values.yaml`**
 
 > [!IMPORTANT]
-> Replace `YOUR_AUTH0_DOMAIN` (both places) and `YOUR_AUTH0_CLIENT_ID` (both places) with the values you copied from Auth0.
+> Replace `YOUR_AUTH0_DOMAIN` (three places) and `YOUR_AUTH0_CLIENT_ID` (once — only in `GW_AUTH_CLIENT_ID`) with the values you copied from Auth0. The `{client_id}`, `{app_url}`, `{state}`, and `{code_challenge}` tokens are template placeholders that Geoweb fills in at runtime — leave them as they are.
 
 ```yaml
 frontend:
@@ -150,7 +150,7 @@ frontend:
     GW_AUTH_CLIENT_ID: "YOUR_AUTH0_CLIENT_ID"
     GW_AUTH_LOGIN_URL: "https://YOUR_AUTH0_DOMAIN/authorize?client_id={client_id}&response_type=code&scope=openid+profile+email&redirect_uri={app_url}/code&state={state}&code_challenge={code_challenge}&code_challenge_method=S256"
     GW_AUTH_TOKEN_URL: "https://YOUR_AUTH0_DOMAIN/oauth/token"
-    GW_AUTH_LOGOUT_URL: "https://YOUR_AUTH0_DOMAIN/v2/logout?client_id=YOUR_AUTH0_CLIENT_ID&returnTo={app_url}"
+    GW_AUTH_LOGOUT_URL: "https://YOUR_AUTH0_DOMAIN/v2/logout?client_id={client_id}&returnTo={app_url}"
 ```
 
 **Step 3 — Re-install and verify**
