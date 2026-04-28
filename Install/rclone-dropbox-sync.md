@@ -141,11 +141,38 @@ Create cron file:
 ---
 
 ## On the Smartmet-Workstation
+
+Open the command promt as the Administrator.
+Remove the old S-drive if exist.
+
+
+```
+net use s: /delele
+```
+
+
 Map the local DropBox directory that is used for data syncing as the S-drive
 
 ```
 net use s: \\localhost\c$\Smartmet\Dropbox\{country}\data
 ```
+
+Open the File Explorer, select from local folders C:\smarmet\wrk\data\local
+
+Right click it and select Map Network Drive
+
+Select drive to be S:
+
+and set folder
+
+\\localhost\c$\Smartmet\Dropbox\{country}\data
+
+And select reconnect at sign-in. 
+
+And Finish.
+
+
+
 
 --- 
 
