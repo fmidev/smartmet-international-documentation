@@ -51,6 +51,11 @@ Every pod should show `Running`. Then confirm the VIP is reachable from another 
 ```bash
 ping 192.168.1.100
 ```
+Also test that API is really reachable and it is not only responding to blind ping:
+```
+kubectl --server=https://ge-ext-kubernetes.nea.gov.ge:6443 get --raw='/readyz?verbose'
+```
+It should return "OK" as value in multiple fields.
 
 ## Upgrade
 
