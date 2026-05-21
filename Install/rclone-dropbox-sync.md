@@ -135,7 +135,7 @@ Create cron file:
 
 ```bash
 # Sync editor/in data to Dropbox for regional offices
-*/15 * * * * rclone -v sync /smartmet/editor/in/ {countrycode}_dropbox:{country}/data/in/ > /smartmet/logs/data/dropbox_sync.log
+*/15 * * * * rclone -v sync /smartmet/editor/in/ {countrycode}_dropbox:{country}/data/in/ > /smartmet/logs/data/dropbox_sync.log 2>&1
 ```
 
 ---
