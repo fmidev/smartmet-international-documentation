@@ -22,7 +22,9 @@ Software that provides various APIs to query and download weather data and image
 * Add SYNOP  https://github.com/fmidev/smartmet-data-gts-synop
 * Add SOUNDING  https://github.com/fmidev/smartmet-data-gts-sounding
 * Add METAR  https://github.com/fmidev/smartmet-data-gts-metar
-* If local GTS files are not available use packages 
+* If local GTS files are not available use packages
+
+See also: **How SmartSymbol parameter is generated** in [https://github.com/fmidev/smartmet-engine-querydata/tree/master/docs/smartsymbol.md](https://github.com/fmidev/smartmet-engine-querydata/tree/master/docs/smartsymbol.md)
 
 ### Cron
 
